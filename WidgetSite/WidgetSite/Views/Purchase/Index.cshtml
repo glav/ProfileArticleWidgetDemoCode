@@ -1,0 +1,9 @@
+﻿@model WidgetSite.Models.WidgetPurchaseViewModel
+@{
+    ViewBag.Title = "Widget Shopfront - Buy";
+}
+<h2>Awesome Widget Shopfront - Confirm Purchase</h2>
+<h3>You have selected <strong>@Model.WidgetToBuy.Name</strong></h3>
+<h4>The total cost is (including @Model.WidgetToBuy.Parts.Count() parts is): @string.Format("{0:c}",Model.TotalCost)</h4>
+
+<p><button class="btn btn-default" id="confirm">Confirm purchase</button> or <a href="~/">Cancel</a></p>
